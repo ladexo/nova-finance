@@ -116,7 +116,11 @@ const NovaFinance = () => {
                 ))}
               </div>
             </div>
-            <button onClick={saveData} className="w-full mt-6 bg-emerald-500 text-black py-4 rounded-xl font-bold hover:bg-emerald-400">Commit to Cloud</button>
+            
+            {/* HERE IS THE FIX: Using 'loading' in the button UI */}
+            <button onClick={saveData} disabled={loading} className="w-full mt-6 bg-emerald-500 text-black py-4 rounded-xl font-bold hover:bg-emerald-400">
+              {loading ? 'Syncing...' : 'Commit to Cloud'}
+            </button>
           </>
         )}
 
