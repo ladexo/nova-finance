@@ -5,6 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nova-finance</title>
+    <!-- Tailwind CDN to bypass build errors -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Optional: Add your custom brand colors here if needed
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                950: '#0a0a0a',
+                900: '#171717',
+                800: '#262626',
+                400: '#10b981',
+                300: '#34d399',
+              }
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

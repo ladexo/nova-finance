@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 body {
   @apply bg-brand-950 text-white antialiased selection:bg-brand-400 selection:text-black;
